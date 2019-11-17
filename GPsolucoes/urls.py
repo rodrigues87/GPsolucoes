@@ -18,6 +18,8 @@ from django.urls import path
 from django.conf.urls import url
 from django.urls import path, include, re_path
 from django.views.generic import RedirectView
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     url(r'^vali/', include('vali.urls')),
@@ -25,4 +27,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'', RedirectView.as_view(url='/admin/')),
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
