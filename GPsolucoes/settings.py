@@ -19,7 +19,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 DEBUG = True
-ALLOWED_HOSTS = ['abelsantana.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['gpsolucoes.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

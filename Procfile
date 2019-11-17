@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn abelsantana.wsgi --log-file -
+web: gunicorn GPsolucoes.wsgi --log-file -
